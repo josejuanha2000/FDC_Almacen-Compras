@@ -1,0 +1,54 @@
+C:\Users\juan.hernandez.FACDYC\AppData\Local\Temporary Projects\Almacen-Compras\bin\Debug\Almacen-Compras.exe
+C:\Users\juan.hernandez.FACDYC\AppData\Local\Temporary Projects\Almacen-Compras\bin\Debug\Almacen-Compras.pdb
+C:\Users\juan.hernandez.FACDYC\AppData\Local\Temporary Projects\Almacen-Compras\bin\Debug\Almacen-Compras.xml
+C:\Users\juan.hernandez.FACDYC\AppData\Local\Temporary Projects\Almacen-Compras\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\juan.hernandez.FACDYC\AppData\Local\Temporary Projects\Almacen-Compras\obj\Debug\Almacen_Compras.Form1.resources
+C:\Users\juan.hernandez.FACDYC\AppData\Local\Temporary Projects\Almacen-Compras\obj\Debug\Almacen_Compras.Resources.resources
+C:\Users\juan.hernandez.FACDYC\AppData\Local\Temporary Projects\Almacen-Compras\obj\Debug\Almacen-Compras.vbproj.GenerateResource.Cache
+C:\Users\juan.hernandez.FACDYC\AppData\Local\Temporary Projects\Almacen-Compras\obj\Debug\Almacen-Compras.exe
+C:\Users\juan.hernandez.FACDYC\AppData\Local\Temporary Projects\Almacen-Compras\obj\Debug\Almacen-Compras.xml
+C:\Users\juan.hernandez.FACDYC\AppData\Local\Temporary Projects\Almacen-Compras\obj\Debug\Almacen-Compras.pdb
+F:\Almacen-Compras\Almacen-Compras\obj\Debug\Almacen-Compras.exe
+F:\Almacen-Compras\Almacen-Compras\obj\Debug\Almacen-Compras.xml
+F:\Almacen-Compras\Almacen-Compras\obj\Debug\Almacen-Compras.pdb
+F:\Almacen-Compras\Almacen-Compras\bin\Debug\Almacen-Compras.exe
+F:\Almacen-Compras\Almacen-Compras\bin\Debug\Almacen-Compras.pdb
+F:\Almacen-Compras\Almacen-Compras\bin\Debug\Almacen-Compras.xml
+F:\Almacen-Compras\Almacen-Compras\obj\Debug\ResolveAssemblyReference.cache
+F:\Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.FrmProveedores.resources
+F:\Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.Resources.resources
+F:\Almacen-Compras\Almacen-Compras\obj\Debug\Almacen-Compras.vbproj.GenerateResource.Cache
+F:\Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.FrmArticulos.resources
+F:\Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.FrmOrdenCompra.resources
+F:\Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.FrmReporteOrdenCompra.resources
+F:\Almacen-Compras\Almacen-Compras\bin\Debug\Almacen-Compras.exe.config
+F:\Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.FrmRequerimientos.resources
+F:\Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.FrmReporteRequerimiento.resources
+F:\Almacen-Compras\Almacen-Compras\obj\Debug\RdlCompile.cache
+F:\Almacen-Compras\Almacen-Compras\obj\Debug\RdlCompile.compiled
+F:\Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.MenuComprasAlmacen.resources
+F:\Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.FrmGenera_Orden_Compra.resources
+F:\FDC_Almacen-Compras\Almacen-Compras\bin\Debug\Almacen-Compras.exe.config
+F:\FDC_Almacen-Compras\Almacen-Compras\obj\Debug\Almacen-Compras.exe
+F:\FDC_Almacen-Compras\Almacen-Compras\obj\Debug\Almacen-Compras.xml
+F:\FDC_Almacen-Compras\Almacen-Compras\obj\Debug\Almacen-Compras.pdb
+F:\FDC_Almacen-Compras\Almacen-Compras\bin\Debug\Almacen-Compras.exe
+F:\FDC_Almacen-Compras\Almacen-Compras\bin\Debug\Almacen-Compras.pdb
+F:\FDC_Almacen-Compras\Almacen-Compras\bin\Debug\Almacen-Compras.xml
+F:\FDC_Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.FrmArticulos.resources
+F:\FDC_Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.FrmGenera_Orden_Compra.resources
+F:\FDC_Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.FrmOrdenCompra.resources
+F:\FDC_Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.FrmProveedores.resources
+F:\FDC_Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.FrmReporteOrdenCompra.resources
+F:\FDC_Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.FrmReporteRequerimiento.resources
+F:\FDC_Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.FrmRequerimientos.resources
+F:\FDC_Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.MenuComprasAlmacen.resources
+F:\FDC_Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.Resources.resources
+F:\FDC_Almacen-Compras\Almacen-Compras\obj\Debug\Almacen-Compras.vbproj.GenerateResource.Cache
+F:\FDC_Almacen-Compras\Almacen-Compras\obj\Debug\RdlCompile.cache
+F:\FDC_Almacen-Compras\Almacen-Compras\obj\Debug\RdlCompile.compiled
+F:\FDC_Almacen-Compras\Almacen-Compras\obj\Debug\Almacen-Compras.vbprojResolveAssemblyReference.cache
+F:\FDC_Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.FrmLoginAlmacen.resources
+F:\FDC_Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.FrmMenuCompras.resources
+F:\FDC_Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.FrmAutorizacionDireccion.resources
+F:\FDC_Almacen-Compras\Almacen-Compras\obj\Debug\Almacen_Compras.FrmReq_Mat_Aut_Direccion.resources
