@@ -8,6 +8,20 @@ Public Class FrmGenera_Orden_Compra
     Private Sub FrmGenera_Orden_Compra_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'ALMACENDataSet.Proveedores' Puede moverla o quitarla según sea necesario.
         Me.ProveedoresTableAdapter.Fill(Me.ALMACENDataSet.Proveedores)
+        'TODO: esta línea de código carga datos en la tabla 'ALMACENDataSet.Proveedores' Puede moverla o quitarla según sea necesario.
+        ' Me.ProveedoresTableAdapter.Fill(Me.ALMACENDataSet.Proveedores)
+
+        'TODO: esta línea de código carga datos en la tabla 'ALMACENDataSet4.Proveedores' Puede moverla o quitarla según sea necesario.
+        ' Me.ProveedoresTableAdapter.Fill(Me.ALMACENDataSet.Proveedores)
+
+        'TODO: esta línea de código carga datos en la tabla 'ALMACENDataSet3.Proveedores' Puede moverla o quitarla según sea necesario.
+        ' Me.ProveedoresTableAdapter.Fill(Me.ALMACENDataSet3.Proveedores)
+        'TODO: esta línea de código carga datos en la tabla 'ALMACENDataSet2.Proveedores' Puede moverla o quitarla según sea necesario.
+        'Me.ProveedoresTableAdapter.Fill(Me.ALMACENDataSet2.Proveedores)
+        'TODO: esta línea de código carga datos en la tabla 'ALMACENDataSet11.Proveedores' Puede moverla o quitarla según sea necesario.
+        'Me.ProveedoresTableAdapter.Fill(Me.ALMACENDataSet11.Proveedores)
+        'TODO: esta línea de código carga datos en la tabla 'ALMACENDataSet.Proveedores' Puede moverla o quitarla según sea necesario.
+        'Me.ProveedoresTableAdapter.Fill(Me.ALMACENDataSet.Proveedores)
     End Sub
     Public order_bd As SqlCommand
     Private d_table As DataTable
@@ -57,8 +71,6 @@ Public Class FrmGenera_Orden_Compra
         Me.SqlConnection1.Open()
         'Dim Actualiza_Bono_Hojas As String = ("UPDATE Bono_Hojas SET Resto_hojas=@Resto_hojas where Matricula= '" & TBMatricula.Text & "'")
         sqldatagrid_articulo = ("SELECT * FROM Requerimiento where No_Compra = '" & Val(TB_Orden_Compra.Text) & "'")
-
-
         order_bd = New SqlCommand(sqldatagrid_articulo, Me.SqlConnection1)
         order_bd.CommandType = CommandType.Text
         order_bd.ExecuteNonQuery()
@@ -66,6 +78,7 @@ Public Class FrmGenera_Orden_Compra
         d_table = New DataTable
         d_adapter.Fill(d_table)
         Dim cr As New CROrdenCompra
+        'Dim cr As New CR_OrdenCompra2
         cr.SetDataSource(d_table)
         Dim r As New FrmReporteOrdenCompra
         r.CrystalReportViewer1.ReportSource = cr
@@ -108,12 +121,12 @@ Public Class FrmGenera_Orden_Compra
         Call cargar_datos_Proveedores()
     End Sub
 
-    Private Sub FillBy2ToolStripButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Try
-            Me.ProveedoresTableAdapter.FillBy2(Me.ALMACENDataSet.Proveedores)
-        Catch ex As System.Exception
-            System.Windows.Forms.MessageBox.Show(ex.Message)
-        End Try
+    'Private Sub FillBy2ToolStripButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    ' Try
+    ''Me.ProveedoresTableAdapter.FillBy2(Me.ALMACENDataSet.Proveedores)
+    'Catch ex As System.Exception
+    '        System.Windows.Forms.MessageBox.Show(ex.Message)
+    ' End Try
 
-    End Sub
+    '    End Sub
 End Class

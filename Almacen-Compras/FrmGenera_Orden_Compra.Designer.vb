@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FrmGenera_Orden_Compra
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,28 +20,30 @@ Partial Class FrmGenera_Orden_Compra
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.BtnMostrar = New System.Windows.Forms.Button
-        Me.TB_Orden_Compra = New System.Windows.Forms.TextBox
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label18 = New System.Windows.Forms.Label
-        Me.Label17 = New System.Windows.Forms.Label
-        Me.Label16 = New System.Windows.Forms.Label
-        Me.TB_Telefono = New System.Windows.Forms.TextBox
-        Me.TB_Direccion = New System.Windows.Forms.TextBox
-        Me.CB_NombreProveedor = New System.Windows.Forms.ComboBox
+        Me.components = New System.ComponentModel.Container()
+        Me.BtnMostrar = New System.Windows.Forms.Button()
+        Me.TB_Orden_Compra = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.TB_Telefono = New System.Windows.Forms.TextBox()
+        Me.TB_Direccion = New System.Windows.Forms.TextBox()
+        Me.CB_NombreProveedor = New System.Windows.Forms.ComboBox()
         Me.ProveedoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ALMACENDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ALMACENDataSet = New Almacen_Compras.ALMACENDataSet
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView
-        Me.BtnImprimir = New System.Windows.Forms.Button
-        Me.SqlConnection1 = New System.Data.SqlClient.SqlConnection
-        Me.ProveedoresTableAdapter = New Almacen_Compras.ALMACENDataSetTableAdapters.ProveedoresTableAdapter
+        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ALMACENDataSet = New Almacen_Compras.ALMACENDataSet()
+        Me.ProveedoresBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.BtnImprimir = New System.Windows.Forms.Button()
+        Me.SqlConnection1 = New System.Data.SqlClient.SqlConnection()
+        Me.ProveedoresTableAdapter = New Almacen_Compras.ALMACENDataSetTableAdapters.ProveedoresTableAdapter()
         CType(Me.ProveedoresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ALMACENDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ALMACENDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProveedoresBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -118,7 +120,8 @@ Partial Class FrmGenera_Orden_Compra
         '
         'CB_NombreProveedor
         '
-        Me.CB_NombreProveedor.DataSource = Me.ProveedoresBindingSource
+        Me.CB_NombreProveedor.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.ProveedoresBindingSource, "Nombre_Proveedor", True))
+        Me.CB_NombreProveedor.DataSource = Me.ProveedoresBindingSource1
         Me.CB_NombreProveedor.DisplayMember = "Nombre_Proveedor"
         Me.CB_NombreProveedor.FormattingEnabled = True
         Me.CB_NombreProveedor.Location = New System.Drawing.Point(141, 80)
@@ -131,17 +134,22 @@ Partial Class FrmGenera_Orden_Compra
         'ProveedoresBindingSource
         '
         Me.ProveedoresBindingSource.DataMember = "Proveedores"
-        Me.ProveedoresBindingSource.DataSource = Me.ALMACENDataSetBindingSource
+        Me.ProveedoresBindingSource.DataSource = Me.BindingSource1
         '
-        'ALMACENDataSetBindingSource
+        'BindingSource1
         '
-        Me.ALMACENDataSetBindingSource.DataSource = Me.ALMACENDataSet
-        Me.ALMACENDataSetBindingSource.Position = 0
+        Me.BindingSource1.DataSource = Me.ALMACENDataSet
+        Me.BindingSource1.Position = 0
         '
         'ALMACENDataSet
         '
         Me.ALMACENDataSet.DataSetName = "ALMACENDataSet"
         Me.ALMACENDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'ProveedoresBindingSource1
+        '
+        Me.ProveedoresBindingSource1.DataMember = "Proveedores"
+        Me.ProveedoresBindingSource1.DataSource = Me.BindingSource1
         '
         'DataGridView1
         '
@@ -163,8 +171,8 @@ Partial Class FrmGenera_Orden_Compra
         '
         'SqlConnection1
         '
-        Me.SqlConnection1.ConnectionString = "Data Source=COLMASQLFDC01\FACDYCDES;Initial Catalog=ALMACEN;Integrated Security=T" & _
-            "rue"
+        Me.SqlConnection1.ConnectionString = "Data Source=148.234.110.22;Initial Catalog=ALMACEN;Persist Security Info=True;Use" &
+    "r ID=sa;Password=Facdyc2020"
         Me.SqlConnection1.FireInfoMessageEventOnUserErrors = False
         '
         'ProveedoresTableAdapter
@@ -190,8 +198,9 @@ Partial Class FrmGenera_Orden_Compra
         Me.Name = "FrmGenera_Orden_Compra"
         Me.Text = "FrmGenera_Orden_Compra"
         CType(Me.ProveedoresBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ALMACENDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ALMACENDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProveedoresBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -209,8 +218,9 @@ Partial Class FrmGenera_Orden_Compra
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents BtnImprimir As System.Windows.Forms.Button
     Friend WithEvents SqlConnection1 As System.Data.SqlClient.SqlConnection
-    Friend WithEvents ALMACENDataSetBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents ALMACENDataSet As Almacen_Compras.ALMACENDataSet
-    Friend WithEvents ProveedoresBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents ProveedoresTableAdapter As Almacen_Compras.ALMACENDataSetTableAdapters.ProveedoresTableAdapter
+    Friend WithEvents BindingSource1 As BindingSource
+    Friend WithEvents ALMACENDataSet As ALMACENDataSet
+    Friend WithEvents ProveedoresBindingSource As BindingSource
+    Friend WithEvents ProveedoresTableAdapter As ALMACENDataSetTableAdapters.ProveedoresTableAdapter
+    Friend WithEvents ProveedoresBindingSource1 As BindingSource
 End Class

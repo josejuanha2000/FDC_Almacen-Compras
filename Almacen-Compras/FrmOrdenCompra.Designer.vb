@@ -60,17 +60,17 @@ Partial Class FrmOrdenCompra
         Me.Label15 = New System.Windows.Forms.Label()
         Me.BtnImprimir = New System.Windows.Forms.Button()
         Me.CB_NombreProveedor = New System.Windows.Forms.ComboBox()
-        Me.ProveedoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ALMACENDataSet = New Almacen_Compras.ALMACENDataSet()
         Me.TB_Direccion = New System.Windows.Forms.TextBox()
         Me.TB_Telefono = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
-        Me.ProveedoresTableAdapter = New Almacen_Compras.ALMACENDataSetTableAdapters.ProveedoresTableAdapter()
+        Me.ALMACENDataSet1 = New Almacen_Compras.ALMACENDataSet1()
+        Me.RequerimientoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.RequerimientoTableAdapter = New Almacen_Compras.ALMACENDataSet1TableAdapters.RequerimientoTableAdapter()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ProveedoresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ALMACENDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ALMACENDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RequerimientoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -271,8 +271,8 @@ Partial Class FrmOrdenCompra
         '
         'SqlConnection1
         '
-        Me.SqlConnection1.ConnectionString = "Data Source=COLMASQLFDC01\FACDYCDES;Initial Catalog=ALMACEN;Integrated Security=T" & _
-    "rue"
+        Me.SqlConnection1.ConnectionString = "Data Source=148.234.110.22;Initial Catalog=ALMACEN;User ID=sa;Password=Facdyc2020" &
+    ""
         Me.SqlConnection1.FireInfoMessageEventOnUserErrors = False
         '
         'BtnMostrar
@@ -401,24 +401,14 @@ Partial Class FrmOrdenCompra
         '
         'CB_NombreProveedor
         '
-        Me.CB_NombreProveedor.DataSource = Me.ProveedoresBindingSource
+        Me.CB_NombreProveedor.DataSource = Me.RequerimientoBindingSource
         Me.CB_NombreProveedor.DisplayMember = "Nombre_Proveedor"
         Me.CB_NombreProveedor.FormattingEnabled = True
         Me.CB_NombreProveedor.Location = New System.Drawing.Point(146, 554)
         Me.CB_NombreProveedor.Name = "CB_NombreProveedor"
         Me.CB_NombreProveedor.Size = New System.Drawing.Size(480, 21)
         Me.CB_NombreProveedor.TabIndex = 35
-        Me.CB_NombreProveedor.ValueMember = "Nombre_Proveedor"
-        '
-        'ProveedoresBindingSource
-        '
-        Me.ProveedoresBindingSource.DataMember = "Proveedores"
-        Me.ProveedoresBindingSource.DataSource = Me.ALMACENDataSet
-        '
-        'ALMACENDataSet
-        '
-        Me.ALMACENDataSet.DataSetName = "ALMACENDataSet"
-        Me.ALMACENDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.CB_NombreProveedor.ValueMember = "Direccion"
         '
         'TB_Direccion
         '
@@ -463,9 +453,19 @@ Partial Class FrmOrdenCompra
         Me.Label18.TabIndex = 40
         Me.Label18.Text = "Telefono:"
         '
-        'ProveedoresTableAdapter
+        'ALMACENDataSet1
         '
-        Me.ProveedoresTableAdapter.ClearBeforeFill = True
+        Me.ALMACENDataSet1.DataSetName = "ALMACENDataSet1"
+        Me.ALMACENDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'RequerimientoBindingSource
+        '
+        Me.RequerimientoBindingSource.DataMember = "Requerimiento"
+        Me.RequerimientoBindingSource.DataSource = Me.ALMACENDataSet1
+        '
+        'RequerimientoTableAdapter
+        '
+        Me.RequerimientoTableAdapter.ClearBeforeFill = True
         '
         'FrmOrdenCompra
         '
@@ -517,8 +517,8 @@ Partial Class FrmOrdenCompra
         Me.Name = "FrmOrdenCompra"
         Me.Text = "Orden de Compra"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ProveedoresBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ALMACENDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ALMACENDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RequerimientoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -565,7 +565,7 @@ Partial Class FrmOrdenCompra
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents Label17 As System.Windows.Forms.Label
     Friend WithEvents Label18 As System.Windows.Forms.Label
-    Friend WithEvents ALMACENDataSet As Almacen_Compras.ALMACENDataSet
-    Friend WithEvents ProveedoresBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents ProveedoresTableAdapter As Almacen_Compras.ALMACENDataSetTableAdapters.ProveedoresTableAdapter
+    Friend WithEvents ALMACENDataSet1 As ALMACENDataSet1
+    Friend WithEvents RequerimientoBindingSource As BindingSource
+    Friend WithEvents RequerimientoTableAdapter As ALMACENDataSet1TableAdapters.RequerimientoTableAdapter
 End Class

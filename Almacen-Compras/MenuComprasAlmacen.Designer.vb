@@ -29,6 +29,7 @@ Partial Class MenuComprasAlmacen
         Me.ReqDeMaterialToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AutorizarEnSubDirAdministrativaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AutorizadosPorDireccionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AutorizacionCOMPRASToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OrdenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RequerimientosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OrdenDeCompraToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -70,18 +71,18 @@ Partial Class MenuComprasAlmacen
         'ProveedoresToolStripMenuItem2
         '
         Me.ProveedoresToolStripMenuItem2.Name = "ProveedoresToolStripMenuItem2"
-        Me.ProveedoresToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
+        Me.ProveedoresToolStripMenuItem2.Size = New System.Drawing.Size(145, 22)
         Me.ProveedoresToolStripMenuItem2.Text = "Proveedores"
         '
         'ArticulosToolStripMenuItem2
         '
         Me.ArticulosToolStripMenuItem2.Name = "ArticulosToolStripMenuItem2"
-        Me.ArticulosToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
+        Me.ArticulosToolStripMenuItem2.Size = New System.Drawing.Size(145, 22)
         Me.ArticulosToolStripMenuItem2.Text = "Articulos"
         '
         'ReqDeMaterialToolStripMenuItem
         '
-        Me.ReqDeMaterialToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AutorizarEnSubDirAdministrativaToolStripMenuItem, Me.AutorizadosPorDireccionToolStripMenuItem})
+        Me.ReqDeMaterialToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AutorizarEnSubDirAdministrativaToolStripMenuItem, Me.AutorizadosPorDireccionToolStripMenuItem, Me.AutorizacionCOMPRASToolStripMenuItem})
         Me.ReqDeMaterialToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ReqDeMaterialToolStripMenuItem.Name = "ReqDeMaterialToolStripMenuItem"
         Me.ReqDeMaterialToolStripMenuItem.Size = New System.Drawing.Size(122, 20)
@@ -98,6 +99,12 @@ Partial Class MenuComprasAlmacen
         Me.AutorizadosPorDireccionToolStripMenuItem.Name = "AutorizadosPorDireccionToolStripMenuItem"
         Me.AutorizadosPorDireccionToolStripMenuItem.Size = New System.Drawing.Size(274, 22)
         Me.AutorizadosPorDireccionToolStripMenuItem.Text = "Autorizados por Direccion"
+        '
+        'AutorizacionCOMPRASToolStripMenuItem
+        '
+        Me.AutorizacionCOMPRASToolStripMenuItem.Name = "AutorizacionCOMPRASToolStripMenuItem"
+        Me.AutorizacionCOMPRASToolStripMenuItem.Size = New System.Drawing.Size(274, 22)
+        Me.AutorizacionCOMPRASToolStripMenuItem.Text = "Autorizacion COMPRAS"
         '
         'OrdenToolStripMenuItem
         '
@@ -236,6 +243,7 @@ Partial Class MenuComprasAlmacen
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "MenuComprasAlmacen"
         Me.Text = " Almacen y Compras FACDYC"
@@ -270,4 +278,5 @@ Partial Class MenuComprasAlmacen
     Friend WithEvents AutorizarEnSubDirAdministrativaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AutorizadosPorDireccionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents AutorizacionCOMPRASToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -32,20 +32,22 @@
     Private Sub MenuComprasAlmacen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
-
-    
-
     Private Sub AutorizarEnSubDirAdministrativaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AutorizarEnSubDirAdministrativaToolStripMenuItem.Click
         Dim Proceso As Process = New Process
-        Process.Start("F:\CETIA\Almacen\ALMACEN.exe")
+        Process.Start("V:\COMPRAS\Almacen\Material.exe")
     End Sub
 
     Private Sub AutorizadosPorDireccionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AutorizadosPorDireccionToolStripMenuItem.Click
         Dim Proceso As Process = New Process
-        Process.Start("F:\CETIA\Direccion\Autorzados\ALMACEN.exe")
+        Process.Start("V:\COMPRAS\Direccion\Autorizacion Direccion.exe")
         'FrmReq_Mat_Aut_Direccion.Show()
         'FrmLoginAlmacen.Show()
         'FrmAutorizacionDireccion.Show()
+
+    End Sub
+
+    Private Sub AutorizacionCOMPRASToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AutorizacionCOMPRASToolStripMenuItem.Click
+        FrmAutorizacionCompras.Show()
 
     End Sub
 End Class

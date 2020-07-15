@@ -1149,8 +1149,8 @@ Partial Class FrmReq_Mat_Aut_Direccion
         '
         'SqlConnection1
         '
-        Me.SqlConnection1.ConnectionString = "Data Source=COLMASQLFDC01\FACDYCDES;Initial Catalog=ALMACEN;Integrated Security=T" & _
-    "rue"
+        Me.SqlConnection1.ConnectionString = "Data Source=148.234.110.22;Initial Catalog=ALMACEN;User ID=sa;Password=Facdyc2020" &
+    ""
         Me.SqlConnection1.FireInfoMessageEventOnUserErrors = False
         '
         'FrmReq_Mat_Aut_Direccion

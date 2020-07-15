@@ -22,27 +22,26 @@ Partial Class FrmReporteOrdenCompra
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.SqlConnection1 = New System.Data.SqlClient.SqlConnection
-        Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer
+        Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.SqlConnection1 = New System.Data.SqlClient.SqlConnection()
         Me.SuspendLayout()
-        '
-        'SqlConnection1
-        '
-        Me.SqlConnection1.ConnectionString = "Data Source=COLMASQLFDC01\FACDYCDES;Initial Catalog=ALMACEN;Integrated Security=T" & _
-            "rue"
-        Me.SqlConnection1.FireInfoMessageEventOnUserErrors = False
         '
         'CrystalReportViewer1
         '
         Me.CrystalReportViewer1.ActiveViewIndex = -1
         Me.CrystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.CrystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default
         Me.CrystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CrystalReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
-        Me.CrystalReportViewer1.SelectionFormula = ""
         Me.CrystalReportViewer1.Size = New System.Drawing.Size(938, 733)
         Me.CrystalReportViewer1.TabIndex = 0
-        Me.CrystalReportViewer1.ViewTimeSelectionFormula = ""
+        '
+        'SqlConnection1
+        '
+        Me.SqlConnection1.ConnectionString = "Data Source=148.234.110.22;Initial Catalog=ALMACEN;Persist Security Info=True;Use" &
+    "r ID=sa;Password=Facdyc2020"
+        Me.SqlConnection1.FireInfoMessageEventOnUserErrors = False
         '
         'FrmReporteOrdenCompra
         '
@@ -55,6 +54,6 @@ Partial Class FrmReporteOrdenCompra
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents SqlConnection1 As System.Data.SqlClient.SqlConnection
     Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
+    Friend WithEvents SqlConnection1 As SqlClient.SqlConnection
 End Class

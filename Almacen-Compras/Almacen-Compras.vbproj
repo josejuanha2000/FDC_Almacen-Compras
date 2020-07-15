@@ -12,7 +12,7 @@
     <AssemblyName>Almacen-Compras</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsFormsWithCustomSubMain</MyType>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
     <OptionStrict>Off</OptionStrict>
@@ -37,6 +37,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,6 +48,7 @@
     <DocumentationFile>Almacen-Compras.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
     <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -56,12 +58,13 @@
     <OutputPath>bin\Release\</OutputPath>
     <DocumentationFile>Almacen-Compras.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
@@ -102,11 +105,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ALMACENDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ALMACENDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ALMACENDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="CONEXION2.vb" />
     <Compile Include="CROrdenCompra.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CROrdenCompra.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CR_OrdenCompra2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_OrdenCompra2.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CR_Requerimiento.vb">
@@ -120,6 +134,12 @@
       <DependentUpon>FrmArticulos.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmArticulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutorizacionCompras.Designer.vb">
+      <DependentUpon>FrmAutorizacionCompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAutorizacionCompras.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAutorizacionDireccion.Designer.vb">
@@ -211,6 +231,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CROrdenCompra.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="CR_OrdenCompra2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_OrdenCompra2.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="CR_Requerimiento.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CR_Requerimiento.vb</LastGenOutput>
@@ -218,6 +242,9 @@
     <EmbeddedResource Include="FrmArticulos.resx">
       <DependentUpon>FrmArticulos.vb</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAutorizacionCompras.resx">
+      <DependentUpon>FrmAutorizacionCompras.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAutorizacionDireccion.resx">
       <DependentUpon>FrmAutorizacionDireccion.vb</DependentUpon>
@@ -279,7 +306,23 @@
     <None Include="ALMACENDataSet.xss">
       <DependentUpon>ALMACENDataSet.xsd</DependentUpon>
     </None>
-    <None Include="app.config" />
+    <None Include="ALMACENDataSet1.xsc">
+      <DependentUpon>ALMACENDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ALMACENDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ALMACENDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ALMACENDataSet1.xss">
+      <DependentUpon>ALMACENDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IMG\app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

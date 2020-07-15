@@ -22,7 +22,6 @@ Partial Class FrmMenuCompras
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMenuCompras))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label_Id_Depto = New System.Windows.Forms.Label()
@@ -121,7 +120,7 @@ Partial Class FrmMenuCompras
         '
         Me.BtnAutoriza.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnAutoriza.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.BtnAutoriza.Image = CType(resources.GetObject("BtnAutoriza.Image"), System.Drawing.Image)
+        Me.BtnAutoriza.Image = Global.Almacen_Compras.My.Resources.Resources.compras_almacen
         Me.BtnAutoriza.Location = New System.Drawing.Point(290, 151)
         Me.BtnAutoriza.Name = "BtnAutoriza"
         Me.BtnAutoriza.Size = New System.Drawing.Size(183, 134)
@@ -133,7 +132,7 @@ Partial Class FrmMenuCompras
         'BtnNuevoReq
         '
         Me.BtnNuevoReq.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnNuevoReq.Image = CType(resources.GetObject("BtnNuevoReq.Image"), System.Drawing.Image)
+        Me.BtnNuevoReq.Image = Global.Almacen_Compras.My.Resources.Resources.compras_almacen
         Me.BtnNuevoReq.Location = New System.Drawing.Point(31, 153)
         Me.BtnNuevoReq.Name = "BtnNuevoReq"
         Me.BtnNuevoReq.Size = New System.Drawing.Size(184, 134)

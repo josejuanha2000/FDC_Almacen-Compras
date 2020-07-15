@@ -6,8 +6,10 @@ Imports System.IO
 Imports System.Text
 Public Class FrmOrdenCompra
     Private Sub FrmOrdenCompra_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'ALMACENDataSet1.Requerimiento' Puede moverla o quitarla según sea necesario.
+        Me.RequerimientoTableAdapter.Fill(Me.ALMACENDataSet1.Requerimiento)
         'TODO: esta línea de código carga datos en la tabla 'ALMACENDataSet.Proveedores' Puede moverla o quitarla según sea necesario.
-        Me.ProveedoresTableAdapter.Fill(Me.ALMACENDataSet.Proveedores)
+        'Me.ProveedoresTableAdapter.Fill(Me.ALMACENDataSet.Proveedores)
     End Sub
     Dim editar As Boolean = False
     Dim roweditar As Integer

@@ -6,7 +6,7 @@ Imports System.IO
 Imports System.Text
 Public Class FrmArticulos
     Private Sub FrmArticulos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Call carga_productos()
+        Call cargar_productos()
         Call CargarDatos_articulo()
     End Sub
     Dim editar As Boolean = False
@@ -22,7 +22,7 @@ Public Class FrmArticulos
     Dim sqlproducto As New SqlCommand
     Dim sqldrproducto As SqlDataReader
     Public clave_producto As String
-    Sub carga_productos()
+    Sub cargar_productos()
         Try
             Me.SqlConnection1.Open()
             sqlproducto.CommandType = CommandType.Text

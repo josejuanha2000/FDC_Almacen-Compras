@@ -22,29 +22,29 @@ Partial Class FrmRequerimientos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.SqlConnection1 = New System.Data.SqlClient.SqlConnection
-        Me.BtnMostrar = New System.Windows.Forms.Button
-        Me.DateTimePickerFechaRegistroReq = New System.Windows.Forms.DateTimePicker
-        Me.TB_Titular = New System.Windows.Forms.TextBox
-        Me.TB_Departamento = New System.Windows.Forms.TextBox
-        Me.TB_FolioReq = New System.Windows.Forms.TextBox
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label15 = New System.Windows.Forms.Label
-        Me.Label14 = New System.Windows.Forms.Label
-        Me.TB_SubTotal_General = New System.Windows.Forms.TextBox
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView
-        Me.TB_Total_General_Iva = New System.Windows.Forms.TextBox
-        Me.BtnImprimir = New System.Windows.Forms.Button
+        Me.SqlConnection1 = New System.Data.SqlClient.SqlConnection()
+        Me.BtnMostrar = New System.Windows.Forms.Button()
+        Me.DateTimePickerFechaRegistroReq = New System.Windows.Forms.DateTimePicker()
+        Me.TB_Titular = New System.Windows.Forms.TextBox()
+        Me.TB_Departamento = New System.Windows.Forms.TextBox()
+        Me.TB_FolioReq = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.TB_SubTotal_General = New System.Windows.Forms.TextBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.TB_Total_General_Iva = New System.Windows.Forms.TextBox()
+        Me.BtnImprimir = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SqlConnection1
         '
-        Me.SqlConnection1.ConnectionString = "Data Source=COLMASQLFDC01\FACDYCDES;Initial Catalog=ALMACEN;Integrated Security=T" & _
-            "rue"
+        Me.SqlConnection1.ConnectionString = "Data Source=148.234.110.22;Initial Catalog=ALMACEN;User ID=sa;Password=Facdyc2020" &
+    ""
         Me.SqlConnection1.FireInfoMessageEventOnUserErrors = False
         '
         'BtnMostrar

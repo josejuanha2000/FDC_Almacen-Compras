@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{9C15EBF4-775E-487A-A214-562771600634}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Almacen_Compras.MenuComprasAlmacen</StartupObject>
+    <StartupObject>Almacen_Compras.FrmLoginAlmacen</StartupObject>
     <RootNamespace>Almacen_Compras</RootNamespace>
     <AssemblyName>Almacen-Compras</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -22,6 +22,21 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,6 +46,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>Almacen-Compras.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -86,6 +102,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ALMACENDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="CONEXION2.vb" />
     <Compile Include="CROrdenCompra.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -98,16 +115,35 @@
       <DependentUpon>CR_Requerimiento.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Datos2.vb" />
     <Compile Include="FrmArticulos.Designer.vb">
       <DependentUpon>FrmArticulos.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmArticulos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmAutorizacionDireccion.Designer.vb">
+      <DependentUpon>FrmAutorizacionDireccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAutorizacionDireccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmGenera_Orden_Compra.Designer.vb">
       <DependentUpon>FrmGenera_Orden_Compra.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmGenera_Orden_Compra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLoginAlmacen.Designer.vb">
+      <DependentUpon>FrmLoginAlmacen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLoginAlmacen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuCompras.Designer.vb">
+      <DependentUpon>FrmMenuCompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuCompras.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmOrdenCompra.Designer.vb">
@@ -141,6 +177,13 @@
     <Compile Include="FrmRequerimientos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmReq_Mat_Aut_Direccion.Designer.vb">
+      <DependentUpon>FrmReq_Mat_Aut_Direccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReq_Mat_Aut_Direccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUNCIONES2.vb" />
     <Compile Include="MenuComprasAlmacen.Designer.vb">
       <DependentUpon>MenuComprasAlmacen.vb</DependentUpon>
     </Compile>
@@ -176,9 +219,18 @@
       <DependentUpon>FrmArticulos.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAutorizacionDireccion.resx">
+      <DependentUpon>FrmAutorizacionDireccion.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmGenera_Orden_Compra.resx">
       <DependentUpon>FrmGenera_Orden_Compra.vb</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLoginAlmacen.resx">
+      <DependentUpon>FrmLoginAlmacen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuCompras.resx">
+      <DependentUpon>FrmMenuCompras.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOrdenCompra.resx">
       <DependentUpon>FrmOrdenCompra.vb</DependentUpon>
@@ -200,15 +252,18 @@
       <DependentUpon>FrmRequerimientos.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmReq_Mat_Aut_Direccion.resx">
+      <DependentUpon>FrmReq_Mat_Aut_Direccion.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuComprasAlmacen.resx">
       <DependentUpon>MenuComprasAlmacen.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportOC.rdlc" />
   </ItemGroup>
@@ -244,6 +299,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="IMG\facdyc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imglogin1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imglogin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IMG\compras-almacen.jpg" />
+    <Content Include="IMG\imglogin.jpg" />
+    <None Include="Resources\compras-almacen.jpg" />
+    <None Include="Resources\imglogin2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

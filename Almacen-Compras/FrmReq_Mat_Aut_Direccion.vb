@@ -66,7 +66,7 @@ Public Class FrmReq_Mat_Aut_Direccion
         TBTitular.Text = FrmAutorizacionDireccion.TBTitular.Text
         Label_Id_Depto.Text = FrmAutorizacionDireccion.Label_Id_Depto.Text
         Call buscar_ultimo_folio()
-        Call cargar_producto()
+        Call carga_producto()
         Call limpiar_costo_articulo()
     End Sub
     Sub buscar_ultimo_folio()
@@ -106,7 +106,7 @@ Public Class FrmReq_Mat_Aut_Direccion
         End Try
         Me.SqlConnection1.Close()
     End Sub
-    Sub cargar_producto()
+    Sub carga_producto()
         Try
             Me.SqlConnection1.Open()
             cbprod1.CommandType = CommandType.Text
